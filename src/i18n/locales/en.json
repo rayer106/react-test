@@ -1,0 +1,60 @@
+{
+  "app": {
+    "title": "Dighotlist",
+    "welcome": "Hi, Welcome back",
+    "logout": "Logout",
+    "reset_password": "Reset password"
+  },
+  "dashboard": {
+    "daily_visits": "Daily visits",
+    "search_trends": "Recent 7-day search trends",
+    "keywords": "Keywords",
+    "visit_trends": "Recent 7-day visit trends"
+  },
+  "commission": {
+    "today_commission": "Today commission",
+    "total_commission": "Total commission",
+    "commission_ranking": "Commission Ranking Top 10",
+    "recent": "Recent 7 days"
+  },
+  "products": {
+    "categories": {
+      "vape": "Vape",
+      "cloth": "Cloth",
+      "sneake": "Sneake",
+      "digital": "Digital"
+    },
+    "search_placeholder": "Find products...",
+    "need_other_products": "Need other products?",
+    "join_discord": "Join dighotlist Discord",
+    "add_to_hotlist": "Add to my hotlist"
+  },
+  "influencer": {
+    "id": "Influencer ID",
+    "contact": "If you need any help, just contact us"
+  },
+  "navigation": {
+    "daily_visits": "Daily visits",
+    "my_hotlist": "My hotlist",
+    "commission_products": "Commission products",
+    "my_commissions": "My Commissions",
+    "setup": "Setup"
+  },
+  "setup": {
+    "title": "Account Settings",
+    "profile": "Profile",
+    "commission_account": "Commission Account",
+    "profile_picture": "Profile Picture",
+    "upload": "Upload",
+    "username": "Username",
+    "email": "Email",
+    "phone": "Phone",
+    "save_changes": "Save Changes",
+    "commission_account_desc": "Please fill in your bank account information for commission withdrawal",
+    "bank_name": "Bank Name",
+    "account_name": "Account Name",
+    "account_number": "Account Number",
+    "paypal_email": "PayPal Email",
+    "save_account": "Save Account"
+  }
+}

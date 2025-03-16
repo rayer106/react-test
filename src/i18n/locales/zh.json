@@ -1,0 +1,60 @@
+{
+  "app": {
+    "title": "Dighotlist",
+    "welcome": "您好，欢迎回来",
+    "logout": "退出登录",
+    "reset_password": "重置密码"
+  },
+  "dashboard": {
+    "daily_visits": "每日访问量",
+    "search_trends": "近7天搜索趋势",
+    "keywords": "关键词",
+    "visit_trends": "近7天访问趋势"
+  },
+  "commission": {
+    "today_commission": "今日佣金",
+    "total_commission": "总佣金",
+    "commission_ranking": "佣金排行榜 Top 10",
+    "recent": "最近7天"
+  },
+  "products": {
+    "categories": {
+      "vape": "电子烟",
+      "cloth": "服装",
+      "sneake": "运动鞋",
+      "digital": "数码产品"
+    },
+    "search_placeholder": "查找产品...",
+    "need_other_products": "需要其他产品？",
+    "join_discord": "加入Dighotlist Discord",
+    "add_to_hotlist": "添加到我的热门列表"
+  },
+  "influencer": {
+    "id": "推广者ID",
+    "contact": "如果您需要任何帮助，请联系我们"
+  },
+  "navigation": {
+    "daily_visits": "每日访问量",
+    "my_hotlist": "我的热门列表",
+    "commission_products": "佣金产品",
+    "my_commissions": "我的佣金",
+    "setup": "设置"
+  },
+  "setup": {
+    "title": "账户设置",
+    "profile": "个人资料",
+    "commission_account": "佣金账户",
+    "profile_picture": "头像",
+    "upload": "上传",
+    "username": "用户名",
+    "email": "邮箱",
+    "phone": "电话",
+    "save_changes": "保存更改",
+    "commission_account_desc": "请填写您的银行账户信息以便佣金提现",
+    "bank_name": "银行名称",
+    "account_name": "账户名称",
+    "account_number": "账号",
+    "paypal_email": "PayPal邮箱",
+    "save_account": "保存账户"
+  }
+}
