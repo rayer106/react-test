@@ -39,12 +39,7 @@ const Header = () => {
     <AppBar position="static" color="transparent" elevation={0} sx={{ borderBottom: 1, borderColor: '#EAEAEA', backgroundColor: 'white', height: '64px' }}>
       <Toolbar sx={{ height: '100%', px: 3 }}>
         <Box sx={{ flexGrow: 1, display: 'flex', alignItems: 'center' }}>
-          <Typography variant="h6" component="div" fontWeight="500" sx={{ fontSize: '14px', color: '#666' }}>
-            {t('app.welcome')} 👋
-          </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{ ml: 2, fontSize: '14px' }}>
-            Daily visits: 10000
-          </Typography>
+          {/* 移除欢迎文本和访问量信息 */}
         </Box>
         
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
