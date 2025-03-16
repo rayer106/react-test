@@ -7,7 +7,6 @@ import {
   Toolbar,
   Typography,
   Box,
-  Button,
   IconButton,
   Menu,
   MenuItem,
@@ -49,23 +48,12 @@ const Header = () => {
             color="inherit"
             edge="end"
             sx={{ 
-              borderRadius: 1.5,
-              padding: '6px 12px',
-              border: '1px solid',
-              borderColor: '#EAEAEA',
-              '&:hover': { 
-                backgroundColor: '#F8F9FA',
-                borderColor: '#FF7846'
-              }
+              p: 0
             }}
           >
-            <Avatar sx={{ width: 28, height: 28, bgcolor: '#FF7846', mr: 1 }}>
-              <AccountCircle fontSize="small" />
+            <Avatar sx={{ width: 32, height: 32, bgcolor: '#FF7846' }}>
+              {user?.name?.charAt(0) || 'U'}
             </Avatar>
-            <Typography variant="body2" sx={{ mx: 1, fontSize: '14px', color: '#333' }}>
-              {user?.name || 'User'}
-            </Typography>
-            <ExpandMore sx={{ fontSize: 20, color: '#666' }} />
           </IconButton>
         </Box>
         
@@ -83,9 +71,11 @@ const Header = () => {
           }}
           open={Boolean(anchorEl)}
           onClose={handleClose}
-          PaperProps={{
-            elevation: 2,
-            sx: { minWidth: 180, mt: 1, borderRadius: 1.5 }
+          slotProps={{
+            paper: {
+              elevation: 2,
+              sx: { minWidth: 180, mt: 1, borderRadius: 1.5 }
+            }
           }}
         >
           <MenuItem sx={{ pointerEvents: 'none', opacity: 0.7 }}>

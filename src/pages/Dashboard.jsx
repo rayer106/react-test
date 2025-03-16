@@ -208,7 +208,7 @@ const Dashboard = () => {
     <Box sx={{ width: '100%', margin: '0 auto', p: 2 }}>
       {/* 欢迎信息 */}
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
-        <Typography variant="h5" sx={{ fontWeight: 600, color: '#000' }}>
+        <Typography variant="h5" sx={{ fontWeight: 500, color: '#000', fontSize: '16px' }}>
           Hi, Welcome back 👋
         </Typography>
       </Box>
@@ -218,14 +218,14 @@ const Dashboard = () => {
         <Box sx={{ flex: 1 }}>
           <Paper elevation={0} sx={{ p: 2, borderRadius: 2, boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.05)' }}>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-              <Typography variant="body1" color="text.secondary" sx={{ fontSize: '14px' }}>
+              <Typography variant="body1" color="text.secondary" sx={{ fontSize: '13px', fontWeight: 400 }}>
                 Daily visits
               </Typography>
-              <Typography variant="h5" color="#FF7846" fontWeight="bold" sx={{ fontSize: '20px' }}>
+              <Typography color="#FF7846" fontWeight="600" sx={{ fontSize: '22px', lineHeight: 1.2 }}>
                 10000
               </Typography>
             </Box>
-            <Typography variant="body2" color="text.secondary" sx={{ mb: 1, fontSize: '12px' }}>
+            <Typography variant="body2" color="text.secondary" sx={{ mb: 1, fontSize: '11px', fontWeight: 400 }}>
               Recent 7-day visit trends
             </Typography>
             <ReactApexChart 
@@ -240,14 +240,14 @@ const Dashboard = () => {
         <Box sx={{ flex: 1 }}>
           <Paper elevation={0} sx={{ p: 2, borderRadius: 2, boxShadow: '0px 2px 8px rgba(0, 0, 0, 0.05)', height: '100%' }}>
             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-              <Typography variant="body1" color="text.secondary" sx={{ fontSize: '14px' }}>
+              <Typography variant="body1" color="text.secondary" sx={{ fontSize: '13px', fontWeight: 400 }}>
                 Recent 7-day search trends
               </Typography>
-              <Typography variant="h5" color="#FF7846" fontWeight="bold" sx={{ fontSize: '20px' }}>
+              <Typography color="#FF7846" fontWeight="600" sx={{ fontSize: '22px', lineHeight: 1.2 }}>
                 2242
               </Typography>
             </Box>
-            <Typography variant="body2" color="text.secondary" sx={{ mb: 1, fontSize: '12px' }}>
+            <Typography variant="body2" color="text.secondary" sx={{ mb: 1, fontSize: '11px', fontWeight: 400 }}>
               Keywords:
             </Typography>
             <List sx={{ '& .MuiListItem-root': { py: 0.3 } }}>
@@ -255,19 +255,18 @@ const Dashboard = () => {
                 <ListItem 
                   key={index}
                   secondaryAction={
-                    <Typography variant="body2" color="text.secondary" sx={{ fontSize: '12px' }}>
+                    <Typography variant="body2" color="text.secondary" sx={{ fontSize: '11px', fontWeight: 400 }}>
                       {item.count}
                     </Typography>
                   }
                   sx={{ py: 0.5 }}
                 >
                   <ListItemText 
-                    primary={item.keyword} 
-                    primaryTypographyProps={{ 
-                      variant: 'body2',
-                      color: 'text.primary',
-                      fontSize: '13px'
-                    }}
+                    primary={
+                      <Typography variant="body2" color="text.primary" sx={{ fontSize: '12px', fontWeight: 400 }}>
+                        {item.keyword}
+                      </Typography>
+                    }
                   />
                 </ListItem>
               ))}
@@ -279,10 +278,10 @@ const Dashboard = () => {
       {/* Influencer ID */}
       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 3 }}>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Typography variant="body2" color="text.secondary" sx={{ mr: 1, fontSize: '12px' }}>
+          <Typography variant="body2" color="text.secondary" sx={{ mr: 1, fontSize: '11px', fontSize: '11px', fontWeight: 400 }}>
             Influencer ID:
           </Typography>
-          <Typography variant="body2" sx={{ fontSize: '12px' }}>
+          <Typography variant="body2" sx={{ fontSize: '11px', fontWeight: 500 }}>
             123213KOL ID1312131
           </Typography>
         </Box>
@@ -319,11 +318,11 @@ const Dashboard = () => {
           >
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Avatar sx={{ bgcolor: '#FFEEE9', color: '#FF7846', mr: 2, width: 32, height: 32, fontSize: '14px' }}>T</Avatar>
-              <Typography variant="body1" sx={{ fontSize: '14px' }}>
+              <Typography variant="body1" sx={{ fontSize: '13px', fontWeight: 400 }}>
                 Today commission
               </Typography>
             </Box>
-            <Typography variant="h5" color="#FF7846" fontWeight="bold" sx={{ fontSize: '18px' }}>
+            <Typography color="#FF7846" fontWeight="600" sx={{ fontSize: '18px', lineHeight: 1.2 }}>
               $12.56
             </Typography>
           </Paper>
@@ -345,11 +344,11 @@ const Dashboard = () => {
           >
             <Box sx={{ display: 'flex', alignItems: 'center' }}>
               <Avatar sx={{ bgcolor: '#FFEEE9', color: '#FF7846', mr: 2, width: 32, height: 32, fontSize: '14px' }}>T</Avatar>
-              <Typography variant="body1" sx={{ fontSize: '14px' }}>
+              <Typography variant="body1" sx={{ fontSize: '13px', fontWeight: 400 }}>
                 Total commission
               </Typography>
             </Box>
-            <Typography variant="h5" color="#FF7846" fontWeight="bold" sx={{ fontSize: '18px' }}>
+            <Typography color="#FF7846" fontWeight="600" sx={{ fontSize: '18px', lineHeight: 1.2 }}>
               $1.20
             </Typography>
           </Paper>
@@ -369,11 +368,11 @@ const Dashboard = () => {
             }}
           >
             <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 2 }}>
-              <Typography variant="body1" fontWeight="medium" sx={{ fontSize: '14px' }}>
+              <Typography variant="body1" sx={{ fontSize: '13px', fontWeight: 600 }}>
                 Commission Ranking Top 10
               </Typography>
             </Box>
-            <Typography variant="body2" color="text.secondary" sx={{ mb: 1, fontSize: '12px' }}>
+            <Typography variant="body2" color="text.secondary" sx={{ mb: 1, fontSize: '11px', fontWeight: 400 }}>
               Recent 7 days
             </Typography>
             <List sx={{ '& .MuiListItem-root': { py: 0.3 } }}>
@@ -502,20 +501,20 @@ const Dashboard = () => {
                       alt={product.title}
                     />
                     <CardContent sx={{ p: 1.5 }}>
-                      <Typography variant="body2" sx={{ mb: 1, height: 40, overflow: 'hidden', textOverflow: 'ellipsis', fontSize: '13px' }}>
+                      <Typography variant="body2" sx={{ mb: 1, height: 40, overflow: 'hidden', textOverflow: 'ellipsis', fontSize: '12px', fontWeight: 400 }}>
                         {product.title}
                       </Typography>
                       
                       <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mb: 1 }}>
-                        <Typography variant="h6" color="#FF7846" fontWeight="bold" sx={{ fontSize: '15px' }}>
+                        <Typography color="#FF7846" fontWeight="600" sx={{ fontSize: '15px' }}>
                           ${product.price}
                         </Typography>
-                        <Typography variant="body2" color="text.secondary" sx={{ fontSize: '12px' }}>
-                          Commission: <Typography component="span" color="#FF7846" fontWeight="medium" sx={{ fontSize: '12px' }}>${product.commission}</Typography>
+                        <Typography variant="body2" color="text.secondary" sx={{ fontSize: '11px', fontWeight: 400 }}>
+                          Commission: <Typography component="span" color="#FF7846" fontWeight="600" sx={{ fontSize: '11px' }}>${product.commission}</Typography>
                         </Typography>
                       </Box>
                       
-                      <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 1, fontSize: '11px' }}>
+                      <Typography variant="caption" color="text.secondary" display="block" sx={{ mb: 1, fontSize: '10px', fontWeight: 400 }}>
                         Sold {product.sold}, ${product.commissionsPaid.toLocaleString()} commissions paid
                       </Typography>
                       
